@@ -1,0 +1,125 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Gris claro */
+    padding-bottom: 60px; /* Para compensar el espacio del footer */
+    min-height: 100vh; /* Para que el contenido ocupe el alto completo */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ff0000; /* Rojo */
+    color: #fff;
+    padding: 10px 0; /* Reducido el padding superior e inferior */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+header .logo {
+    float: left;
+}
+
+header .logo img {
+    width: 50px; /* Ancho deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+    cursor: pointer;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#right {
+    float: right;
+}
+
+main {
+    padding-top: 60px; /* Ajustado el espacio para dejar espacio para el header fijo */
+}
+
+form {
+    max-width: 400px;
+    margin: 40px auto; /* Aumentado el margen superior e inferior */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    text-align: center;
+}
+
+legend {
+    font-size: 20px;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #ff0000; /* Rojo */
+    color: #fff;
+    text-align: right;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
