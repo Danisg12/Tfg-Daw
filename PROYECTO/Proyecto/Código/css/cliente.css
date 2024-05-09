@@ -1,0 +1,137 @@
+/* Estilos generales para todas las páginas */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bfbfbd; 
+    min-height: 100vh; 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ee272c; 
+    color: #fff;
+    padding: 40px 0; /* Aumentar el padding para hacer el header un poco más grande */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px; /* Ajusta el margen izquierdo según sea necesario */
+    margin-right: 10px; /* Agrega un margen derecho para separar la foto del header */
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+header .logo img {
+    width: 50px; 
+    height: 70px; 
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+header nav {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Estilos de los botones del menú nav */
+header nav ul li a {
+    display: block;
+    padding: 10px 15px; /* Ajustar el padding para hacer los botones más grandes */
+    text-decoration: none;
+    color: #fff;
+    background-color: #002538; /* Color de fondo */
+    border: 1px solid #00254d; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color de fondo */
+}
+
+header nav ul li a:hover {
+    background-color: #000000; /* Cambiar el color de fondo al pasar el ratón */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px); /* Ajuste del contenido principal */
+    padding-top: 0; 
+    background-color: #f8f9fa; /* Color de fondo gris claro */
+}
+
+footer {
+    background-color: #ff0000; 
+    color: #fff;
+    text-align: right;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.image-container {
+    width: 40%;
+    height: 50%; 
+    margin-bottom: 240px; 
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+form.registro {
+    position: absolute;
+    top: 500px; 
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #002538;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999; 
+}
+
+
+.cliente main {
+    padding-top: 120px; 
+}
+
+.barbero main {
+    padding-top: 120px; 
+}
+
+
+.admin main {
+    padding-top: 120px; 
+}
