@@ -1,0 +1,212 @@
+/* Estilos generales para todas las páginas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bfbfbd; 
+    min-height: 100vh; 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ee272c; 
+    color: #fff;
+    padding: 40px 0; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    margin-right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .logo img {
+    width: 50px; 
+    height: 70px; 
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+header nav {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 10px 15px; 
+    text-decoration: none;
+    color: #fff;
+    background-color: #002538; 
+    border: 1px solid #00254d; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #000000;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px); 
+    padding-top: 0; 
+}
+
+footer {
+    background-color: #ff0000; 
+    color: #fff;
+    text-align: right;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.image-container {
+    width: 40%;
+    height: 50%; 
+    margin-bottom: 240px; 
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #080808; 
+    background-color: #8b8b8b;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+table th {
+    background-color: #002538; 
+    color: #fff;
+    border-right: 1px solid #ddd; 
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #686060;
+}
+
+table button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #002538;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+table button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px; 
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="hidden"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button[type="submit"] {
+    background-color: #ee272c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #d21d21;
+}
